@@ -48,7 +48,15 @@ function candyCounter(nums){
     }
     return sum;
 };
-candyCounter([4,7,9]);
+// candyCounter([4,7,9]);
+//using a For Of Loop
+// function candyCounter(nums){
+// let total = 0;
+//   for(number of nums){
+//     total += number;
+//   }
+//   return total;
+// }
 console.log(candyCounter([4,7,9]));
 console.log("==================")
 // 7
