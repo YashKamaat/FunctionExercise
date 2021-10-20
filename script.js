@@ -87,17 +87,37 @@ console.log("==================")
 // BONUS
 // 12a
 const stephenKingMovies = [
-    "It"
-    "Christine"
-    "Creepshow"
-    "Pet Cemetary"
-    "The Shining"
-    "The Mist"
+    "The Shining",
+  "Christine",
+  "It",
+  "The Mist",
+  "Creepshow",
+  "Pet Sematary"
 
-]
+];
 console.log("==================")
 // 12b
 const twoMovies = stephenKingMovies.filter (i => i.length === 9);
     console.log(twoMovies);
 
 console.log("==================")
+// 13a
+const halloweenSongs1 = ["Monster Mash", "Thriller"];
+
+// 13b
+const halloweenSongs2 = [
+  "I Put A Spell On You",
+  "This Is Halloween",
+  "Ghostbusters"
+];
+
+// 13c
+halloweenJukeBox = songs => {
+  const random = Math.floor(Math.random() * songs.length);
+  console.log(songs[random]);
+}
+
+// 13d
+halloweenJukeBox(halloweenSongs1);
+
+halloweenJukeBox(halloweenSongs2);
