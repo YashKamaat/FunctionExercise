@@ -121,3 +121,51 @@ halloweenJukeBox = songs => {
 halloweenJukeBox(halloweenSongs1);
 
 halloweenJukeBox(halloweenSongs2);
+console.log("=========");
+
+// 14
+caps = string => {
+    let newString = "";
+    for (i = 0; i < string.length; i++){
+      if (i % 2 === 0){
+        newString = newString + string[i].toUpperCase();
+      } else {
+        newString = newString + string[i];
+      }
+    }
+    return newString;
+
+
+// Using the substring method (Returns part of the string between the start and end indexes that are specified. Also, if a second index is not specified the the rest of the string is included)
+// caps = string => {
+//   for (i = 0; i < string.length; i += 2){
+//     string = string.substring(0, i) + string[i].toUpperCase() + string.substring(i + 1);
+//   }
+//   return string;
+// }
+
+// This example accounts for multi word string arguments (AKA Strings with spaces)...
+/*
+caps = string => {
+  let newString = ``;
+  let num = 0;
+  for (letter of string){
+    if (letter !== " "){
+      if (num % 2 === 0){
+        newString += letter.toUpperCase();
+        num++;
+      } else {
+        newString += letter.toLowerCase();
+        num++;
+      }
+    } else {
+      newString += letter;
+    }
+  }
+  return newString;
+}
+*/
+
+console.log(caps(`Hey`));
+console.log(caps(`Halloween`));
+console.log(caps(`Happy Halloween`));
