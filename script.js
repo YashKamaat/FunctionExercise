@@ -49,20 +49,43 @@ console.log(candyCounter([4,7,9]));
 console.log("==================")
 // 7
 const hauntedMansion = function() {
-
+console.log("Welcome, foolish mortals to the Haunted Mansion BWHAHAHA!");
 }
+hauntedMansion();
 console.log("==================")
 // 8
+ghostBusters = () => `Who do you call?`
+console.log(ghostBusters());
 console.log("==================")
 // 9
+// NO
 console.log("==================")
 // 10
+// YES
 console.log("==================")
 // 11a
+const costumes = [`Ancestor, Royalty, Thief`];
+
 console.log("==================")
 // 11b
+const upperCostumes = costumes.map(i => i.toUpperCase());
+console.log(upperCostumes);
 console.log("==================")
 
 // BONUS
 // 12a
+const stephenKingMovies = [
+    "It"
+    "Christine"
+    "Creepshow"
+    "Pet Cemetary"
+    "The Shining"
+    "The Mist"
+
+]
+console.log("==================")
+// 12b
+const twoMovies = stephenKingMovies.filter (i => i.length === 9);
+    console.log(twoMovies);
+
 console.log("==================")
