@@ -28,13 +28,17 @@ console.log(halloween());
 console.log("==================")
 // 5
 function isEnoughCandy(pieces){
-    if (pieces > 31){
+    if (pieces >= 31){
         return true;
-    } else if (pieces < 31){
+    } else  {
         return false;
     }
 };
-console.log(isEnoughCandy(31));
+
+//Ternary
+// return (pieces >= 31) ? true : false;
+console.log(isEnoughCandy(31)); //True
+console.log(isEnoughCandy(5)); // false
 console.log("==================")
 // 6
 function candyCounter(nums){
