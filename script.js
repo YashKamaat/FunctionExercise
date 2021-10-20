@@ -7,10 +7,11 @@ spookyGhost = () => {
 console.log("==================")
 // 2
 function candy(goal){
-    console.log(${`goal`}, ${`goal`}, ${`goal`}, ${`goal`} );
+    console.log(`${goal}, ${goal}, ${goal}, ${goal}`);
 }
 candy(`GET CANDY`);
 console.log("==================")
+
 // 3
 
 console.log("==================")
